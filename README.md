@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+TP1 React - Composants et Props
+Objectif du TP : Découvrir les bases de React en créant une application structurée avec des composants dynamiques et réutilisables.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Initialisation du projet
+Génération de l'application de base via la commande create-react-app et lancement du serveur de développement local.
 
-## Available Scripts
+<img width="459" height="160" alt="Image" src="https://github.com/user-attachments/assets/33e2866a-e063-4c8e-8670-bb0beddd69e5" />
 
-In the project directory, you can run:
+2. Premiers composants et "Props"
+Création d'un composant simple HelloWorld.js. Ensuite, création du composant Greeting.js pour comprendre le fonctionnement des props (passer une information dynamique, comme le prénom "Rayan", depuis le fichier principal App.js).
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. Sécurisation avec PropTypes et intégration d'image
+Création du composant Profil.js pour afficher un objet contenant un nom, une taille et une photo. Utilisation de la bibliothèque prop-types pour imposer et vérifier le type de données reçues par le composant.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+<img width="340" height="118" alt="Image" src="https://github.com/user-attachments/assets/64256890-0a86-4e1e-a959-ae4f4914e58c" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+4. Réutilisabilité et Listes dynamiques
+Voiture.js : Appel du même composant 3 fois avec des props différentes pour générer un "garage".
 
-### `npm run build`
+ListeCourses.js : Découverte de la fonction JavaScript .map() pour parcourir un tableau de données et générer automatiquement des balises HTML (listes à puces <li>).
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<img width="346" height="212" alt="Image" src="https://github.com/user-attachments/assets/598ecfa7-e5b0-4a7e-8e64-0037af0a756d" />
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+5.Architecture du projet : 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<img width="277" height="502" alt="Image" src="https://github.com/user-attachments/assets/2d7ec2ce-620f-4fcd-9dc9-1946435ff32f" />
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Bilan : Ce TP m'a permis d'assimiler le concept central de React : découper une interface web en petits morceaux de code (les composants) indépendants et paramétrables.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<img width="391" height="403" alt="Image" src="https://github.com/user-attachments/assets/cea4bb1d-462a-4bbd-bc5b-6424cc1c56ed" />
