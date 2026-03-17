@@ -1,5 +1,5 @@
 function HelloWorld() {
-  return <h1>Hello World !</h1>;
+  return <h1>🚀 Bienvenue sur ma première appli React !</h1>;
 }
 
 export default HelloWorld;

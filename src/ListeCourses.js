@@ -2,11 +2,11 @@ import PropTypes from 'prop-types';
 
 function ListeCourses({ elements }) {
   return (
-    <ul>
-      {elements.map((element, index) => (
-        <li key={index}>{element}</li>
+    <ol>
+      {elements.map((item, i) => (
+        <li key={i}>{item}</li>
       ))}
-    </ul>
+    </ol>
   );
 }
 

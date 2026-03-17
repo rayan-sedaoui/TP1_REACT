@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 function Voiture({ marque, modele, couleur }) {
   return (
     <p>
-      Voiture : {marque} {modele}, Couleur : {couleur}
+      🚘 <strong>Véhicule :</strong> {marque} {modele} | <em>Teinte : {couleur}</em>
     </p>
   );
 }

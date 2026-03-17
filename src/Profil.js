@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 
 function Profil({ utilisateur, taille }) {
   return (
-    <div>
-      <img src={utilisateur.photo} alt={utilisateur.nom} width="100" />
-      <p>Nom : {utilisateur.nom}</p>
-      <p>Taille : {taille} cm</p>
+    <div className="carte-profil">
+      <img src={utilisateur.photo} alt={`Avatar de ${utilisateur.nom}`} width="120" />
+      <p><strong>Identité :</strong> {utilisateur.nom}</p>
+      <p><strong>Hauteur :</strong> {taille} cm</p>
     </div>
   );
 }
@@ -19,7 +19,7 @@ Profil.propTypes = {
 };
 
 Profil.defaultProps = {
-  taille: 100,
+  taille: 120,
 };
 
 export default Profil;

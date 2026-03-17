@@ -5,29 +5,31 @@ import Voiture from './Voiture';
 import ListeCourses from './ListeCourses';
 
 function App() {
-  const utilisateur = { nom: 'Rayan', photo: '/user.jng' };
+  // Changement du nom de la variable et des données
+  const profilUser = { nom: 'Léa', photo: '/user.png' };
 
-  const coursesMaison = ["Pain", "Lait", "Oeufs"];
-  const coursesBricolage = ["Clous", "Marteau", "Peinture"];
+  // Nouvelles listes
+  const achatsSupermarche = ["Pommes", "Pâtes", "Jus d'orange", "Fromage"];
+  const achatsJardinerie = ["Terreau", "Graines de tomates", "Pelle"];
 
   return (
-    <div>
+    <div style={{ padding: '20px' }}>
       <HelloWorld />
       <Greeting prenom="Rayan" />
-      <Profil utilisateur={utilisateur} taille={180} />
+      <Profil utilisateur={profilUser} taille={165} />
 
       <hr />
-      <h3>Mon Garage :</h3>
-      <Voiture marque="Renault" modele="Clio" couleur="Rouge" />
-      <Voiture marque="Peugeot" modele="208" couleur="Noire" />
-      <Voiture marque="Toyota" modele="Yaris" couleur="Blanche" />
+      <h3>🚗 Ma concession auto :</h3>
+      <Voiture marque="Audi" modele="A3" couleur="Gris Nardo" />
+      <Voiture marque="Ford" modele="Mustang" couleur="Jaune" />
+      <Voiture marque="Fiat" modele="500" couleur="Vert menthe" />
 
       <hr />
-      <h3>Courses pour la maison :</h3>
-      <ListeCourses elements={coursesMaison} />
+      <h3>🛒 À acheter au supermarché :</h3>
+      <ListeCourses elements={achatsSupermarche} />
 
-      <h3>Courses pour le bricolage :</h3>
-      <ListeCourses elements={coursesBricolage} />
+      <h3>🌱 Liste pour le jardin :</h3>
+      <ListeCourses elements={achatsJardinerie} />
     </div>
   );
 }
